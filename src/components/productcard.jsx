@@ -1,3 +1,5 @@
+import "../css/productcard.css";
+
 export default function ProductCard({ title, img, price, quantity, id, handleClickOnProducts }) {
     const isProductAvailable = quantity > 0;
 
@@ -12,9 +14,11 @@ export default function ProductCard({ title, img, price, quantity, id, handleCli
                 <p>Out Of Stock</p>
             </div>)}
             <img src={img} id="img-product-card" alt="Product" />
-            <h3 className="card-text"> {title} </h3>
-            <p className="card-text"> Pris: {price} kr </p>
-            <p className="card-text"> Antal i lager: {quantity}</p>
+            <div className="product-card-description">
+                <h3 className="card-text"> {title} </h3>
+                <p className="card-text"> Pris: {price} kr </p>
+                <p className="card-text"> Antal i lager: {quantity}</p>
+            </div>
             <button id="product-card-button" onClick={() => handleBuyClick({
                 title, img, price, quantity, id
             })}

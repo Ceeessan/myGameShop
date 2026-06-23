@@ -1,3 +1,5 @@
+import "../css/cart.css";
+
 export default function CartPage({ games, userArrayWithProducts, setUserArrayWithProducts, setGames, setWhatToShow, setUserQuantity }) {
 
     async function postGames() {
@@ -58,8 +60,10 @@ export default function CartPage({ games, userArrayWithProducts, setUserArrayWit
             {userArrayWithProducts.map((product, index) => (
                 <div key={index} className="cart-page-products">
                     <img src={product.img} id="img-product-page" alt="Product" />
-                    <p>{product.title}</p>
-                    <p>Pris: {product.price} kr</p>
+                    <div id="product-info-text">
+                        <p>{product.title}</p>
+                        <p>Pris: {product.price} kr</p>
+                    </div>
                 </div>
             ))}
 

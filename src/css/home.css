@@ -1,0 +1,64 @@
+main {
+    width: 100%;
+}
+
+#sale-banner {
+    background-color: rgb(197, 12, 12);
+    padding: 4px 0;
+    color: var(--myWhiteColor);
+    width: 100%;
+}
+
+#img-front-page {
+    align-items: center;
+    width: 70%;
+    height: 25rem;
+    margin-top: 60px;
+    background-color: rgb(24, 30, 32);
+    box-shadow: 1px 1px 7px rgb(22, 22, 22);
+}
+
+.product-card-space {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-banner-container {
+    position: relative;
+}
+
+.img-banner-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--myWhiteColor);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#popular-games-scroll-text {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#popular-scroll {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 3rem;
+    padding-left: 5rem;
+    width: 100%;
+}
+
+#popular-scroll .product-card {
+    min-width: 200px;
+    width: 200px;
+    flex-shrink: 0;
+}

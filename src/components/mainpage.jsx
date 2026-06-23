@@ -1,6 +1,6 @@
 import CartPage from "./cartpage.jsx";
 import ThankYouCard from "./thankyoucard.jsx";
-import Img from "./img.jsx";
+import Home from "./home.jsx";
 import ProductCard from "./productcard.jsx";
 import EmptyCart from "./emptycart.jsx";
 import Searchbar from "./searchbar.jsx";
@@ -12,10 +12,10 @@ export default function MainPage({ games, whatToShow, setWhatToShow, userArrayWi
         : games;
 
     return (
-        <div id="product-card-space">
-            {whatToShow === "ok" && <Img />}
+        <div className="product-card-space">
+            {whatToShow === "ok" && <Home games={games} handleClickOnProducts={handleClickOnProducts} />}
             {whatToShow === 'products' &&
-                (<div id="product-card-space">
+                (<div className="product-container">
                     <div id="search-bar">
                         <Searchbar
                             games={games}

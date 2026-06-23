@@ -1,6 +1,7 @@
 import SearchInput from "./searchinput.jsx";
 import AllProductsBtn from "./allproductsbtn.jsx";
 import CartIcon from "./carticon.jsx";
+import "../css/navbar.css";
 
 export default function Navbar({ setWhatToShow, userArrayWithProducts, userQuantity, setSearchGame, setUserQuantity, handleClickForProducts, searchWord, setSearchWord, setSelectedGenre }) {
 
@@ -10,7 +11,7 @@ export default function Navbar({ setWhatToShow, userArrayWithProducts, userQuant
 
     return (
         <div id="navbar">
-            <h1 id="gameside-logo" onClick={handleClick}>Gameside</h1>
+            <h1 id="gameside-logo" onClick={handleClick}>Gameworld</h1>
 
             <div id="inner-navbar">
                 <SearchInput

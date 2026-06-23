@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./navbar.jsx";
 import MainPage from "./mainpage.jsx";
+import Footer from "./footer.jsx";
 
 export function App() {
     const [games, setGames] = useState([]);
@@ -13,7 +14,6 @@ export function App() {
 
     async function getGames() {
         const apiURL = `http://localhost:3000/games?title=${searchGame}`;
-        console.log('GET GAMES')
 
         try {
             const response = await fetch(apiURL);
@@ -92,6 +92,9 @@ export function App() {
                         handleGenre={handleGenre}
                     />
                 ) : <p id="products-text"> Loading...</p>}
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     )

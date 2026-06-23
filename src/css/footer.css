@@ -1,0 +1,22 @@
+.footer-container {
+    background-color: rgb(84, 99, 100);
+    color: var(--myWhiteColor);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4rem;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+footer {
+    font-size: 1.1rem;
+    line-height: 3rem;
+}
+
+.contact {
+    cursor: pointer;
+}
