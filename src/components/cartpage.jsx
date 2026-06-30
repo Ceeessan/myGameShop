@@ -3,7 +3,7 @@ import "../css/cart.css";
 export default function CartPage({ games, userArrayWithProducts, setUserArrayWithProducts, setGames, setWhatToShow, setUserQuantity }) {
 
     async function postGames() {
-        const apiPostURL = `http://localhost:3000/quantity`;
+        const apiPostURL = `https://mygameshopbackend.onrender.com/quantity`;
 
         try {
             const response = await fetch(apiPostURL, {

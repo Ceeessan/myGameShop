@@ -13,7 +13,7 @@ export function App() {
     const [selectedGenre, setSelectedGenre] = useState(null);
 
     async function getGames() {
-        const apiURL = `http://localhost:3000/games?title=${searchGame}`;
+        const apiURL = `https://mygameshopbackend.onrender.com/games?title=${searchGame}`;
 
         try {
             const response = await fetch(apiURL);
